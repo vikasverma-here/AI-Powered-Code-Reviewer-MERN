@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tumhara base styling */
+/* Tumhara base styling
 * {
   margin: 0;
   padding: 0;
@@ -72,4 +72,55 @@ main .left .code pre code {
   display: block; /* Ensure code block hai */
 }
 
+ */
 
+
+
+ main {
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.code {
+  flex: 1;
+}
+
+.editor {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7rem;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-family: monospace;
+  overflow: auto;
+}
+
+.review {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  background-color: rgb(29, 29, 29);
+  borderRadius: 0.7rem;
+  padding: 16px;
+  overflow: auto;
+}
+
+.right pre {
+  margin: 0;
+}
