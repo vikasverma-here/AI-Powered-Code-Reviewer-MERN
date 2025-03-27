@@ -1,1 +1,75 @@
-@import "tailwindcss";
+/* Tailwind import (agar Tailwind use karna hai, warna hata do) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tumhara base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  background-color: #000000;
+  position: relative;
+}
+
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  background-color: rgb(88, 86, 86);
+}
+
+main .left .code,
+main .left .code pre,
+main .left .code pre code {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7rem;
+  background-color: rgb(29, 29, 29);
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: darkgray;
+  color: #000000;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* PrismJS ke liye fix */
+main .left .code pre {
+  margin: 0; /* Prism ke default margin ko override */
+  padding: 1rem; /* Code ke andar thodi space */
+}
+
+main .left .code pre code {
+  display: block; /* Ensure code block hai */
+}
+
+
