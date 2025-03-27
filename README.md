@@ -1,1 +1,0 @@
-# AI-Powered-Code-Reviewer-MERN
